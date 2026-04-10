@@ -15,7 +15,7 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   title: "Hilary Okello",
-  description: "Software Developer based in Kisumu, Kenya.",
+  description: "Backend Developer & AI/ML Specialist based in Kisumu, Kenya.",
 };
 
 export default function RootLayout({
