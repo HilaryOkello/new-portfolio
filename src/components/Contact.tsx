@@ -2,9 +2,9 @@
 
 import { Linkedin, Github, Twitter, Mail, Phone } from 'lucide-react';
 import Link from 'next/link';
-import { motion } from 'framer-motion';
+import { motion, type Variants } from 'framer-motion';
 
-const fadeUp = (delay = 0) => ({
+const fadeUp = (delay = 0): Variants => ({
   hidden: { opacity: 0, y: 40 },
   show: { opacity: 1, y: 0, transition: { duration: 0.6, ease: 'easeOut', delay } },
 });

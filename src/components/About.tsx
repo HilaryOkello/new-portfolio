@@ -2,7 +2,7 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
-import { motion } from 'framer-motion';
+import { motion, type Variants } from 'framer-motion';
 import { FileText } from 'lucide-react';
 
 const skillGroups = [
@@ -50,7 +50,7 @@ const softSkills = [
   'Timely Delivery',
 ];
 
-const fadeUp = (delay = 0) => ({
+const fadeUp = (delay = 0): Variants => ({
   hidden: { opacity: 0, y: 40 },
   show: { opacity: 1, y: 0, transition: { duration: 0.6, ease: 'easeOut', delay } },
 });
